@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MED APROVAÇÃO</title>
+<meta name="description" content="Aplicativo de preparação para provas de residência médica.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: uma coluna de leitura (~68ch) com faixas de largura total; a ficha do plano é o único bloco destacado */
+:root{
+  --bg:#f6f8f8; --surface:#ffffff; --fg:#10201f; --muted:#4d605e; --line:#d9e2e1;
+  --accent:#0f766e; --accent-ink:#ffffff; --accent-soft:#e2f2f0;
+  --display:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0b1517; --surface:#112124; --fg:#e7efee; --muted:#9fb3b1; --line:#22383b;
+  --accent:#2dd4bf; --accent-ink:#06201d; --accent-soft:#13312f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0b1517; --surface:#112124; --fg:#e7efee; --muted:#9fb3b1; --line:#22383b;
+  --accent:#2dd4bf; --accent-ink:#06201d; --accent-soft:#13312f; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.65 var(--body);margin:0}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{padding-block:56px 36px;border-bottom:1px solid var(--line)}
+.marca{display:flex;align-items:center;gap:12px;margin-bottom:28px}
+.selo{width:44px;height:44px;border-radius:12px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;
+  font:800 17px/1 var(--display);letter-spacing:.02em}
+.marca span{font:700 13px/1 var(--display);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+h1{font:800 clamp(30px,6vw,44px)/1.12 var(--display);margin:0 0 14px;text-wrap:balance;letter-spacing:-.01em}
+.lead{font-size:18px;color:var(--muted);max-width:60ch;margin:0}
+section{padding-block:40px;border-bottom:1px solid var(--line)}
+h2{font:700 22px/1.25 var(--display);margin:0 0 18px;text-wrap:balance}
+h3{font:700 16px/1.35 var(--display);margin:0 0 4px}
+p{margin:0 0 12px;max-width:68ch}
+.lista{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 28px}
+.lista div{min-width:0}
+.lista p{color:var(--muted);font-size:15px;margin:0}
+.num{font-variant-numeric:tabular-nums}
+.plano{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;display:grid;gap:16px}
+.preco{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.preco b{font:800 40px/1 var(--display);font-variant-numeric:tabular-nums}
+.preco span{color:var(--muted)}
+.plano ul{margin:0;padding-left:20px;display:grid;gap:6px}
+.passos{margin:0;padding-left:22px;display:grid;gap:10px}
+.passos li::marker{font-weight:700;color:var(--accent)}
+details{border:1px solid var(--line);border-radius:12px;background:var(--surface);margin-bottom:12px}
+summary{cursor:pointer;padding:16px 18px;font:700 16px/1.3 var(--display);list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--accent);font-size:20px;line-height:1}
+details[open] summary::after{content:"−"}
+summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:12px}
+.doc{padding:0 18px 18px;font-size:15px;max-height:70vh;overflow:auto}
+.doc h4{font:700 15px/1.35 var(--display);margin:18px 0 6px}
+.doc ul{padding-left:20px;margin:0 0 12px}
+.nota{font-size:14px;color:var(--muted)}
+footer{padding-block:28px 48px;color:var(--muted);font-size:14px}
+@media (max-width:560px){.lista{grid-template-columns:1fr}header{padding-block:36px 28px}}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <div class="marca"><div class="selo" aria-hidden="true">MA</div><span>MED APROVAÇÃO</span></div>
+  <h1>Preparação para as provas de residência médica, num só aplicativo</h1>
+  <p class="lead">Provas oficiais completas, simulados, um banco de questões organizado por assunto e um plano de estudos diário, com resoluções comentadas e acompanhamento do seu desempenho.</p>
+</div></header>
+
+<main>
+<section><div class="wrap">
+  <h2>O que tem no aplicativo</h2>
+  <div class="lista">
+    <div><h3>Banco de Questões</h3><p><span class="num">11.364</span> questões de provas de residência de instituições de vários estados, separadas por grande área, especialidade e assunto, com filtro por ano e dificuldade.</p></div>
+    <div><h3>Provas e Simulados na Íntegra</h3><p>Provas oficiais completas e simulados para fazer com cronômetro, como no dia da prova.</p></div>
+    <div><h3>Jornada de Estudos</h3><p>Um ciclo de <span class="num">200</span> dias com <span class="num">70</span> questões por dia, um tema por área, do básico ao avançado.</p></div>
+    <div><h3>Resoluções e flashcards</h3><p>Resoluções comentadas com as referências usadas, e flashcards com revisão espaçada.</p></div>
+    <div><h3>Avaliações</h3><p>Seu desempenho por área, assunto e dificuldade, com histórico e evolução.</p></div>
+    <div><h3>Seus dados guardados</h3><p>O estudo fica salvo na sua conta e sincronizado entre os seus aparelhos.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Assinatura</h2>
+  <div class="plano">
+    <div class="preco"><b>R$ 39,90</b><span>por mês, pago por Pix</span></div>
+    <ul>
+      <li>Acesso liberado automaticamente assim que o pagamento é confirmado.</li>
+      <li>Cada pagamento vale um mês: vence no mesmo dia do mês seguinte, às 23h59 (horário de Brasília).</li>
+      <li>Renovar antes do vencimento soma o novo mês ao que ainda resta.</li>
+      <li>Sem cobrança automática nem débito recorrente: cada mês é um novo Pix, se você quiser continuar.</li>
+      <li>Se a assinatura vencer, o acesso fica suspenso, mas nada do seu estudo é apagado. Ao renovar, tudo volta como estava.</li>
+    </ul>
+    <p class="nota" style="margin:0">O pagamento é processado pelo Mercado Pago. O aplicativo não recebe dados de cartão nem de conta bancária.</p>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Como começar</h2>
+  <ol class="passos">
+    <li>Instale o aplicativo MED APROVAÇÃO no seu celular Android.</li>
+    <li>Crie sua conta com e-mail e senha.</li>
+    <li>Leia e aceite os Termos de Uso.</li>
+    <li>Pague o Pix exibido na tela, pelo app do seu banco.</li>
+    <li>Pronto: o acesso é liberado sozinho, em instantes.</li>
+  </ol>
+</div></section>
+
+<section id="termos"><div class="wrap">
+  <h2>Termos e privacidade</h2>
+  <details><summary>Termos de Uso</summary><div class="doc"><p>Estes Termos de Uso regulam a utilização do aplicativo MED APROVAÇÃO e dos serviços educacionais oferecidos por meio dele. Leia-os com atenção. Ao marcar a caixa &quot;Li e aceito os Termos de Uso do MED APROVAÇÃO&quot; e concluir o cadastro, você declara que leu, compreendeu e concorda com as condições abaixo.</p>
+<h4>1. Partes e definições</h4>
+<p>1.1. <b>Plataforma</b> é o MED APROVAÇÃO, aplicativo de estudo e preparação para provas de residência médica, incluindo os serviços, conteúdos e funcionalidades oferecidos por meio dele.</p>
+<p>1.2. <b>Usuário</b> é a pessoa física que cria uma conta individual no aplicativo.</p>
+<p>1.3. <b>Conta</b> é o cadastro individual do usuário, identificado pelo e-mail e protegido por senha pessoal.</p>
+<p>1.4. <b>Conteúdos</b> são as questões, provas, simulados, resoluções, comentários, flashcards, trilhas de estudo, estatísticas e demais materiais disponibilizados no aplicativo.</p>
+<p>1.5. <b>Liberação de acesso</b> é a autorização dada pela administração da plataforma para que uma conta utilize os recursos de estudo.</p>
+<h4>2. Objeto e finalidade educacional</h4>
+<p>2.1. Estes Termos têm por objeto a concessão de acesso pessoal e não exclusivo ao aplicativo MED APROVAÇÃO, nas condições aqui descritas.</p>
+<p>2.2. O MED APROVAÇÃO tem finalidade exclusivamente educacional. Destina-se principalmente a estudantes de Medicina e a médicos que se preparam para provas de residência médica e que desejam aprimorar seus conhecimentos por meio de questões, simulados, flashcards, trilhas de estudo e demais recursos educacionais.</p>
+<p>2.3. A plataforma pode oferecer, entre outros recursos, Banco de Questões, Provas na Íntegra, Simulados, Jornada de Estudos, flashcards com revisão espaçada, cadernos de estudo, histórico, avaliações de desempenho e estatísticas. Os recursos disponíveis podem variar conforme a versão do aplicativo e o aparelho utilizado.</p>
+<h4>3. Natureza educacional e limites dos conteúdos</h4>
+<p>3.1. Os conteúdos do MED APROVAÇÃO servem ao estudo e à preparação para avaliações. <b>Eles não substituem a avaliação médica individualizada de um paciente, nem as decisões clínicas e assistenciais de profissionais habilitados</b>, que devem considerar o caso concreto, as diretrizes vigentes e a legislação aplicável.</p>
+<p>3.2. O usuário que exerce atividade profissional permanece integralmente responsável por suas decisões e deve conferir, em fontes científicas atualizadas e em protocolos oficiais, qualquer informação que pretenda aplicar na prática.</p>
+<p>3.3. A plataforma emprega diligência para manter os conteúdos corretos e atualizados, mas eles podem conter imprecisões ou ficar desatualizados diante de novas evidências e diretrizes. O usuário pode comunicar eventuais erros pelos canais da plataforma.</p>
+<p>3.4. A plataforma não garante aprovação em provas, concursos, processos seletivos ou programas de residência médica. O resultado depende de fatores que não estão sob o controle da plataforma.</p>
+<p>3.5. O MED APROVAÇÃO é um projeto independente. Não é mantido, patrocinado nem endossado por instituições organizadoras de provas, bancas examinadoras, cursos preparatórios ou sociedades médicas, salvo quando expressamente informado.</p>
+<h4>4. Cadastro</h4>
+<p>4.1. Para utilizar o aplicativo, o usuário deve criar uma conta, informando um e-mail válido e uma senha pessoal. O nome é opcional e serve apenas para identificação no atendimento.</p>
+<p>4.2. O usuário declara ter pelo menos 18 anos de idade e se compromete a fornecer informações verdadeiras e a mantê-las atualizadas.</p>
+<p>4.3. Cada conta é individual e vinculada a um único titular. Não é permitido criar conta em nome de terceiros nem utilizar dados de outra pessoa.</p>
+<p>4.4. A conclusão do cadastro depende da aceitação expressa destes Termos de Uso. O cadastro não é concluído sem essa confirmação.</p>
+<h4>5. Acesso ao aplicativo e assinatura</h4>
+<p>5.1. A criação da conta não garante, por si só, o acesso aos recursos de estudo. O acesso é liberado por meio de assinatura mensal, paga por Pix dentro do aplicativo, ou, em casos específicos, pela administração da plataforma.</p>
+<p>5.2. O valor da assinatura é informado com clareza na tela de pagamento, antes da emissão do Pix. Cada pagamento gera uma cobrança individual, vinculada à conta de quem a emitiu, com código Pix copia e cola e QR Code próprios.</p>
+<p>5.3. O pagamento é processado pelo Mercado Pago, prestador de serviços de pagamento. O acesso é liberado automaticamente somente depois que o Mercado Pago confirma à plataforma o recebimento do valor correto daquela cobrança. Comprovantes enviados pelo usuário ou a simples indicação de que o pagamento foi feito não liberam o acesso. O aplicativo não recebe nem armazena dados de cartão ou de conta bancária.</p>
+<p>5.4. Cada pagamento confirmado concede um mês de acesso, contado a partir da data da confirmação, até as 23h59 (horário de Brasília) do mesmo dia do mês seguinte. Quando o mês seguinte não tiver esse dia, o vencimento será no último dia daquele mês.</p>
+<p>5.5. A renovação pode ser feita a qualquer momento pelo mesmo procedimento. Feita antes do vencimento, o novo período é somado ao que ainda resta, sem perda de dias. Não há cobrança automática nem débito recorrente: cada mês depende de um novo pagamento.</p>
+<p>5.6. O aplicativo avisa o usuário quando a assinatura estiver próxima do vencimento e no próprio dia do vencimento. Encerrado o período sem renovação confirmada, o acesso aos recursos de estudo é suspenso automaticamente.</p>
+<p>5.7. A suspensão por vencimento não exclui a conta nem apaga nenhuma informação do usuário: questões respondidas, cadernos, simulados, resultados, histórico, progresso na Jornada de Estudos, flashcards e configurações continuam guardados e voltam a ficar disponíveis assim que um novo pagamento for confirmado, sem necessidade de criar outra conta.</p>
+<p>5.8. A administração pode suspender (bloquear) o acesso de uma conta em caso de descumprimento destes Termos, comunicando o usuário sempre que possível. O bloqueio também não exclui a conta nem apaga o histórico de estudo.</p>
+<p>5.9. A instalação do aplicativo, o conhecimento de credenciais ou a posse de um aparelho não constituem autorização de acesso.</p>
+<h4>6. Conta individual e segurança</h4>
+<p>6.1. O acesso é pessoal e intransferível. É proibido emprestar, compartilhar, alugar ou vender a conta ou a senha.</p>
+<p>6.2. O usuário é responsável por guardar sua senha em sigilo e deve comunicar à plataforma qualquer suspeita de uso indevido da conta.</p>
+<p>6.3. A plataforma pode adotar medidas proporcionais de segurança, como verificação em duas etapas, nova confirmação de senha em operações sensíveis e registro de sinais de uso da conta (por exemplo, quantos aparelhos são utilizados), sem coleta de localização.</p>
+<p>6.4. Troca de aparelho ou de rede não é, isoladamente, considerada prova de fraude. Suspeitas de uso indevido são avaliadas por uma pessoa antes de qualquer medida.</p>
+<p>6.5. A plataforma nunca solicitará a senha do usuário pelo atendimento.</p>
+<h4>7. Direitos do usuário</h4>
+<p>São direitos do usuário, entre outros previstos em lei:</p>
+<ul><li>utilizar os recursos disponíveis enquanto a conta estiver liberada, nos termos deste contrato;</li><li>ter o seu histórico de estudo preservado, inclusive em caso de bloqueio, atualização do aplicativo ou reinício de uma Jornada de Estudos;</li><li>consultar, a qualquer momento, a versão destes Termos e da Política de Privacidade que aceitou;</li><li>obter uma cópia dos seus dados de estudo e excluir a sua conta pelo próprio aplicativo;</li><li>receber informação clara sobre alterações relevantes destes Termos;</li><li>exercer os direitos previstos na Lei Geral de Proteção de Dados Pessoais e no Código de Defesa do Consumidor, quando aplicável.</li></ul>
+<h4>8. Deveres do usuário e condutas vedadas</h4>
+<p>8.1. O usuário se compromete a utilizar o aplicativo de boa-fé, para fins pessoais de estudo, respeitando a legislação, estes Termos e os direitos de terceiros.</p>
+<p>8.2. É vedado ao usuário:</p>
+<ul><li>compartilhar a conta ou permitir que terceiros a utilizem;</li><li>copiar, extrair, reproduzir em massa, distribuir, publicar ou comercializar conteúdos do aplicativo, por qualquer meio, inclusive automatizado;</li><li>revender, sublicenciar ou disponibilizar o acesso a terceiros;</li><li>contornar, desativar ou tentar burlar mecanismos de autenticação, de liberação de acesso, de segurança ou de proteção dos conteúdos;</li><li>modificar, descompilar ou distribuir versões adulteradas do aplicativo;</li><li>utilizar o aplicativo para fins ilícitos ou que prejudiquem a plataforma, outros usuários ou terceiros.</li></ul>
+<h4>9. Propriedade intelectual</h4>
+<p>9.1. O aplicativo, sua marca, sua organização, seus textos próprios, comentários, resoluções e aprofundamentos elaborados pela plataforma, bancos de dados, classificações e demais elementos próprios são protegidos pela legislação de direitos autorais, de propriedade industrial e de proteção ao software.</p>
+<p>9.2. Provas, enunciados, gabaritos e outros materiais de terceiros permanecem sob a titularidade de seus respectivos autores e instituições e são utilizados com finalidade educacional, nos limites permitidos pela legislação. A inclusão desses materiais não implica vínculo ou endosso das instituições de origem.</p>
+<p>9.3. Nenhuma disposição destes Termos transfere ao usuário a propriedade do aplicativo ou dos conteúdos.</p>
+<h4>10. Licença e limitações de utilização dos conteúdos</h4>
+<p>10.1. A plataforma concede ao usuário, enquanto a conta estiver liberada, uma licença pessoal, limitada, não exclusiva, intransferível e revogável para acessar e utilizar os conteúdos exclusivamente para estudo individual.</p>
+<p>10.2. A licença não autoriza a reprodução, a distribuição, a publicação, a criação de obras derivadas para fins comerciais nem qualquer uso coletivo ou comercial dos conteúdos.</p>
+<p>10.3. Essas limitações não impedem os usos expressamente permitidos em lei.</p>
+<h4>11. Disponibilização dos materiais educacionais</h4>
+<p>11.1. Os conteúdos são disponibilizados no próprio aplicativo e podem ser acrescentados, corrigidos, reorganizados, atualizados ou retirados ao longo do tempo, inclusive para refletir novas evidências científicas, correções de erros ou questões de direitos de terceiros.</p>
+<p>11.2. Parte dos conteúdos pode ser carregada sob demanda, pela internet. Algumas funcionalidades dependem de conexão para sincronizar o progresso entre aparelhos.</p>
+<p>11.3. As atualizações do aplicativo e dos conteúdos não devem apagar o histórico de estudo do usuário.</p>
+<h4>12. Limitações e condições do serviço</h4>
+<p>12.1. A plataforma busca manter o aplicativo estável, seguro e disponível, mas podem ocorrer interrupções para manutenção, atualizações, falhas técnicas ou fatores externos, como falhas de conexão, de provedores de infraestrutura ou do aparelho do usuário.</p>
+<p>12.2. O funcionamento adequado depende de aparelho compatível, sistema operacional atualizado e, para algumas funções, conexão à internet, sob responsabilidade do usuário.</p>
+<p>12.3. A plataforma pode modificar, acrescentar ou descontinuar funcionalidades, informando o usuário sobre mudanças relevantes.</p>
+<h4>13. Responsabilidades</h4>
+<p>13.1. A plataforma responde pelos serviços que presta nos termos da legislação aplicável, inclusive do Código de Defesa do Consumidor quando incidente, sem exclusões de responsabilidade vedadas por lei.</p>
+<p>13.2. A plataforma não responde por decisões clínicas, profissionais ou acadêmicas tomadas pelo usuário com base nos conteúdos de estudo, nem por resultados de provas e processos seletivos.</p>
+<p>13.3. O usuário responde pelo uso que fizer da conta, pelas informações que fornecer e pelos danos que causar ao violar estes Termos.</p>
+<h4>14. Proteção de dados pessoais e privacidade</h4>
+<p>14.1. O tratamento de dados pessoais segue a Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais — LGPD) e está descrito na Política de Privacidade do MED APROVAÇÃO, disponível no cadastro e em Minha Conta.</p>
+<p>14.2. A plataforma trata apenas os dados necessários ao funcionamento do aplicativo: dados de cadastro e autenticação, histórico de estudo, situação de acesso, registros de segurança e o registro do aceite destes Termos.</p>
+<p>14.3. A aceitação destes Termos não equivale a consentimento genérico para tratamento de dados. Se algum tratamento futuro depender de consentimento, ele será pedido separadamente, de forma específica e destacada.</p>
+<h4>15. Encerramento e exclusão da conta</h4>
+<p>15.1. O usuário pode encerrar a relação a qualquer momento, excluindo a sua conta pelo próprio aplicativo, em Minha Conta. Antes da exclusão, pode baixar uma cópia dos seus dados de estudo.</p>
+<p>15.2. A exclusão remove do servidor a conta, o histórico de estudo e os registros vinculados a ela, nos termos da Política de Privacidade. Registros cuja guarda seja exigida por lei podem ser conservados pelo prazo legal.</p>
+<p>15.3. A plataforma pode suspender ou encerrar o acesso de uma conta em caso de violação relevante destes Termos, de fraude ou de determinação legal, informando o usuário e oferecendo meio de contestação sempre que cabível.</p>
+<p>15.4. Nas contratações feitas pelo aplicativo, o direito de arrependimento e os demais direitos de restituição previstos no Código de Defesa do Consumidor serão respeitados, quando aplicáveis. A exclusão da conta não gera, por si só, devolução proporcional do período já pago, ressalvados esses direitos.</p>
+<h4>16. Alterações destes Termos</h4>
+<p>16.1. Estes Termos podem ser atualizados para refletir mudanças no serviço, na legislação ou nas condições de uso. Cada versão é identificada por número e data.</p>
+<p>16.2. Alterações relevantes serão apresentadas no aplicativo, e a continuidade do uso dependerá da aceitação da nova versão. A versão anteriormente aceita continua registrada e pode ser consultada pelo usuário.</p>
+<h4>17. Aceite eletrônico e registro</h4>
+<p>17.1. O aceite destes Termos é feito por ação expressa do usuário: marcar a caixa &quot;Li e aceito os Termos de Uso do MED APROVAÇÃO&quot;, que não vem previamente marcada, e concluir o cadastro. Abrir ou visualizar este documento não equivale a aceitá-lo.</p>
+<p>17.2. Para comprovar o aceite, a plataforma registra: o identificador da conta, a versão destes Termos, um código de verificação do texto exato aceito, a data e o horário do aceite, o método de confirmação e dados técnicos mínimos (identificador do aparelho gerado pelo aplicativo e versão do aplicativo). Não são coletados outros dados para essa finalidade.</p>
+<p>17.3. No mesmo ato fica registrada a versão da Política de Privacidade apresentada no cadastro. Esse registro comprova que o documento foi disponibilizado ao usuário e não constitui consentimento para tratamento de dados.</p>
+<p>17.4. O usuário pode consultar a qualquer momento, em Minha Conta, a versão destes Termos que aceitou.</p>
+<h4>18. Comunicações</h4>
+<p>18.1. As comunicações sobre a conta, o acesso e estes Termos serão feitas pelo próprio aplicativo e pelo e-mail cadastrado.</p>
+<p>18.2. O usuário pode entrar em contato com a plataforma pelos canais de atendimento informados no aplicativo ou na liberação do acesso.</p>
+<h4>19. Disposições gerais</h4>
+<p>19.1. Estes Termos são regidos pela legislação brasileira, em especial o Código de Defesa do Consumidor, a Lei Geral de Proteção de Dados Pessoais e o Marco Civil da Internet, quando aplicáveis.</p>
+<p>19.2. Fica assegurado ao usuário consumidor o foro do seu domicílio para a solução de eventuais conflitos.</p>
+<p>19.3. A eventual invalidade de uma cláusula não prejudica as demais.</p>
+<p>19.4. A tolerância quanto ao descumprimento de qualquer cláusula não implica renúncia ao direito de exigi-la.</p></div></details>
+  <details id="privacidade"><summary>Política de Privacidade</summary><div class="doc"><p>Esta Política explica, de forma clara, quais dados pessoais o aplicativo MED APROVAÇÃO trata, para quê, com quem são compartilhados, por quanto tempo são guardados e como você exerce os seus direitos, nos termos da Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais — LGPD).</p>
+<h4>1. Quem é o responsável</h4>
+<p>O MED APROVAÇÃO é um aplicativo educacional de preparação para provas de residência médica e é o controlador dos dados pessoais tratados por meio dele. O MED APROVAÇÃO é um projeto independente: não é mantido nem endossado por instituições organizadoras de provas, bancas, cursos preparatórios ou plataformas de ensino, e não compartilha os seus dados com nenhum deles.</p>
+<h4>2. Princípios</h4>
+<p>Tratamos somente os dados necessários ao funcionamento do aplicativo, para finalidades legítimas e informadas, com segurança e transparência. Não vendemos dados, não exibimos anúncios e não usamos ferramentas de rastreamento ou de análise de terceiros.</p>
+<h4>3. Quais dados tratamos e para quê</h4>
+<ul><li><b>E-mail</b>: criar e identificar a conta, entrar, confirmar o cadastro, recuperar a senha e comunicar assuntos da conta. Base legal: execução do contrato (art. 7º, V).</li><li><b>Senha</b>: entrar na conta. Guardamos apenas um resumo criptográfico (hash), que ninguém consegue ler. Base legal: execução do contrato (art. 7º, V).</li><li><b>Nome (opcional)</b>: identificar a sua conta no atendimento. Base legal: execução do contrato (art. 7º, V).</li><li><b>Verificação em duas etapas (se você ativar)</b>: proteger a conta. Base legal: execução do contrato (art. 7º, V).</li><li><b>Histórico de estudo</b> (respostas, tentativas, cadernos, simulados, flashcards, Jornadas de Estudos, metas, instituição-alvo e preferências): mostrar o seu desempenho, montar revisões e a Jornada e sincronizar o progresso entre os seus aparelhos. Base legal: execução do contrato (art. 7º, V).</li><li><b>Identificador do aparelho</b>, gerado pelo próprio aplicativo: saber de qual aparelho veio cada registro, sem misturar nem duplicar dados. Base legal: execução do contrato (art. 7º, V).</li><li><b>Sinais de uso da conta</b> (quantos aparelhos são utilizados e quando, sem localização): proteger a conta e detectar compartilhamento indevido, com revisão por uma pessoa e sem bloqueio automático. Base legal: legítimo interesse (art. 7º, IX), limitado ao necessário.</li><li><b>Situação de acesso</b> (aguardando liberação, ativo ou bloqueado): controlar quem pode utilizar os recursos de estudo. Base legal: execução do contrato (art. 7º, V).</li><li><b>Assinatura e pagamentos</b> (plano, valor, datas de ativação e de vencimento, situação da assinatura, identificador de cada cobrança e da transação no prestador de pagamento, data da confirmação e eventuais estornos): liberar e renovar o acesso, avisar sobre o vencimento e prestar contas dos pagamentos. Base legal: execução do contrato e cumprimento de obrigação legal (art. 7º, V e II).</li><li><b>Registro do aceite dos Termos de Uso e da ciência desta Política</b> (versão, código de verificação do texto exato, data e horário, aparelho e versão do aplicativo): comprovar o que foi aceito e quando. Base legal: execução do contrato e exercício regular de direitos (art. 7º, V e VI).</li><li><b>Registro das ações administrativas sobre a conta</b> (liberação, bloqueio, consultas de atendimento), com data, autor e motivo: prestar contas do que a administração fez e permitir revisão. Base legal: exercício regular de direitos (art. 7º, VI).</li></ul>
+<p>O pagamento é feito no próprio banco do usuário, por Pix, e confirmado pelo Mercado Pago: o aplicativo não recebe dados de cartão nem de conta bancária. Não coletamos localização, contatos, fotos, câmera, microfone ou identificadores de publicidade. Não tomamos decisões automatizadas que afetem os seus interesses: qualquer suspeita de uso indevido é revisada por uma pessoa.</p>
+<h4>4. Consentimento</h4>
+<p>Nenhum dos tratamentos acima depende do seu consentimento: eles são necessários para prestar o serviço que você contratou ou se baseiam nas hipóteses legais indicadas. Aceitar os Termos de Uso não significa consentir com qualquer outro tratamento. Se, no futuro, algum recurso depender de consentimento, ele será pedido separadamente, de forma específica e destacada, e você poderá recusá-lo ou revogá-lo sem perder o acesso ao restante do aplicativo.</p>
+<h4>5. Dados guardados no seu aparelho</h4>
+<p>O aplicativo guarda no próprio aparelho o seu estudo, a sessão de acesso e as preferências, para funcionar também sem conexão. Ao sair da conta, a sessão é apagada do aparelho; o estudo local permanece, para que você não perca o que fez sem conexão. O aplicativo Android não faz cópia desses dados na nuvem do Google.</p>
+<h4>6. Com quem os dados são compartilhados</h4>
+<p>Não vendemos nem cedemos dados pessoais. Utilizamos apenas os prestadores de serviço necessários ao funcionamento do aplicativo:</p>
+<ul><li><b>Supabase</b> (servidores nos Estados Unidos): hospedagem da conta, autenticação, estudo sincronizado, situação de acesso, assinatura e pagamentos, registro de aceites e registros administrativos; envio dos e-mails de confirmação e de recuperação de senha.</li><li><b>Mercado Pago</b> (prestador de serviços de pagamento): emissão da cobrança Pix e confirmação do recebimento. Recebe o e-mail da conta, o valor e o identificador da cobrança, e trata os dados do pagamento conforme a política de privacidade própria.</li></ul>
+<p>Como os servidores ficam fora do Brasil, há transferência internacional de dados, feita com criptografia em trânsito (HTTPS) e restrita às finalidades desta Política, observado o art. 33 da LGPD.</p>
+<p>Recursos que dependam de outro serviço externo só serão ativados depois de constarem desta Política.</p>
+<h4>7. Segurança</h4>
+<p>Toda a comunicação usa conexão criptografada (HTTPS). No servidor, cada pessoa só lê e grava os próprios dados, por regra aplicada pelo próprio banco de dados. A liberação de acesso é decidida no servidor, e não no aparelho. As ações administrativas sensíveis exigem confirmação recente de senha e ficam registradas. Para gerir o acesso, a administração vê o nome (se informado), o e-mail, as datas e a situação de acesso da conta; para atendimento, e apenas com motivo registrado, pode consultar um resumo consolidado do estudo (totais de acertos e erros, Jornadas, meta e instituição-alvo). A administração não vê as suas respostas uma a uma nem os seus cadernos. A plataforma nunca pede a sua senha pelo atendimento.</p>
+<h4>8. Incidentes de segurança</h4>
+<p>Se ocorrer incidente de segurança que possa acarretar risco ou dano relevante a você, comunicaremos você e a Autoridade Nacional de Proteção de Dados (ANPD), nos termos do art. 48 da LGPD e da regulamentação da ANPD.</p>
+<h4>9. Por quanto tempo guardamos</h4>
+<ul><li><b>Conta, estudo e situação de acesso</b>: enquanto a conta existir. Se o acesso for bloqueado ou a assinatura vencer, o estudo continua guardado e volta quando o acesso for restabelecido.</li><li><b>Registros de pagamento</b>: pelo prazo exigido pela legislação fiscal e para o exercício regular de direitos, mesmo depois da exclusão da conta, sem o histórico de estudo.</li><li><b>Ao excluir a conta</b>: apagamos do servidor a conta, o estudo, a situação de acesso, os sinais de uso e o registro de aceite vinculados a ela.</li><li><b>Registro das ações administrativas</b>: conservado, sem o seu e-mail, pelo prazo necessário ao exercício regular de direitos.</li><li><b>Dados no aparelho</b>: permanecem até você sair da conta, limpar os dados do aplicativo ou desinstalá-lo.</li></ul>
+<h4>10. Seus direitos</h4>
+<p>Você pode, a qualquer momento e sem custo (art. 18 da LGPD):</p>
+<ul><li>confirmar se tratamos os seus dados e acessá-los;</li><li>corrigir dados incompletos, inexatos ou desatualizados (o nome pode ser alterado em Minha Conta);</li><li>pedir anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a lei;</li><li>obter a portabilidade dos seus dados de estudo (Minha Conta → Baixar cópia dos meus dados);</li><li>saber com quem compartilhamos os seus dados (seção 6);</li><li>apagar da nuvem os dados de estudo mantendo a conta, ou excluir a conta pelo próprio aplicativo (Minha Conta);</li><li>consultar a versão dos Termos de Uso e desta Política vigente no seu cadastro (Minha Conta);</li><li>revogar consentimento e ser informado sobre as consequências de não fornecê-lo, quando o consentimento for a base de algum tratamento;</li><li>peticionar à Autoridade Nacional de Proteção de Dados.</li></ul>
+<p>Os direitos que não puderem ser exercidos diretamente no aplicativo podem ser solicitados pelos canais de atendimento informados pela plataforma.</p>
+<h4>11. Menores de idade</h4>
+<p>O aplicativo se destina a estudantes de Medicina e a médicos e não é dirigido a menores de 18 anos.</p>
+<h4>12. Alterações desta Política</h4>
+<p>Se esta Política mudar, publicaremos a nova versão no aplicativo, com número e data. Alterações relevantes serão destacadas, e a versão anterior continuará registrada.</p></div></details>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p style="margin:0">MED APROVAÇÃO · aplicativo educacional de preparação para residência médica. Atendimento pelo próprio aplicativo, em Minha Conta.</p>
+</div></footer>
+
+</body>
+</html>
